@@ -10,6 +10,19 @@ import { heroes } from '../data/heroes';
 export const callbacksComponent = (idElementCard) => {
   // console.log('callbacksComponent');
 
+  const id = '5d86371f1efebc31def272e2';
+  findHeroe(id, (error, nameHeroe) => {
+    /// esto nos dice que el eroe no existe pero no nos dice porqué no tenemos un héroe/
+    // idElementCard.innerHTML =
+    //   nameHeroe?.name || 'El héroe que buscas no existe';
+
+    if (error) {
+      idElementCard.innerHTML = error;
+      return;
+    }
+    idElementCard.innerHTML = nameHeroe.name;
+  });
+
   //Callback
   /**
    *
@@ -24,17 +37,4 @@ export const callbacksComponent = (idElementCard) => {
     }
     callback(null, heroe);
   };
-
-  const id = '5d86371f1efebc31def272e2';
-  findHeroe(id, (error, nameHeroe) => {
-    /// esto nos dice que el eroe no existe pero no nos dice porqué no tenemos un héroe/
-    // idElementCard.innerHTML =
-    //   nameHeroe?.name || 'El héroe que buscas no existe';
-
-    if (error) {
-      idElementCard.innerHTML = error;
-      return;
-    }
-    idElementCard.innerHTML = nameHeroe.name;
-  });
 };
