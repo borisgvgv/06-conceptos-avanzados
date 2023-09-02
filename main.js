@@ -7,7 +7,8 @@ import { promisesComponent } from './src/concepts/03-promesas';
 import { promesaRaceComponent } from './src/concepts/04-promesa-race';
 import { asyncComponent } from './src/concepts/05-async';
 import { asyncAwaitComponent } from './src/concepts/06-async-await';
-import { asyncAwait2Component } from './src/concepts/07-async-await';
+import { asyncAwait2Component } from './src/concepts/07-async-await2';
+import { forAwaitComponent } from './src/concepts/08-forawait';
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -36,4 +37,5 @@ const idElementCard = document.querySelector('.card');
 // promesaRaceComponent(idElementCard);
 // asyncComponent(idElementCard);
 // asyncAwaitComponent(idElementCard);
-asyncAwait2Component(idElementCard);
+// asyncAwait2Component(idElementCard);
+forAwaitComponent(idElementCard);
