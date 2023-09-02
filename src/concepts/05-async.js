@@ -21,8 +21,8 @@ export const asyncComponent = (idElementCard) => {
  */
 
 // async devuelve una promesa que resuelve lo que le mandemos como return
-/* la funcion con async siempre resuelve el resultado correcto si no encuentra el
-el resultado corroecto lo evalua con hereo? en el return y devuelve undefined */
+/* la funcion con async siempre resuelve el resultado correcto si no encuentra heroe.id === id 
+lo evalua con hereo? en el return y devuelve undefined */
 const findHeroe = async (id) => {
   const heroe = heroes.find((heroe) => heroe.id === id);
   return heroe?.name;
