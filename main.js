@@ -2,10 +2,12 @@ import './style.css';
 import javascriptLogo from './javascript.svg';
 import viteLogo from '/vite.svg';
 import { environmentsComponents } from './src/concepts/01-environments';
-import { callbacksComponent } from './src/concepts/demo-copy-02-callbacks';
-import { promisesComponent } from './src/concepts/promesas';
-import { promesaRaceComponent } from './src/concepts/promesa-race';
-import { asyncComponent } from './src/concepts/async';
+import { callbacksComponent } from './src/concepts/02-callbacks';
+import { promisesComponent } from './src/concepts/03-promesas';
+import { promesaRaceComponent } from './src/concepts/04-promesa-race';
+import { asyncComponent } from './src/concepts/05-async';
+import { asyncAwaitComponent } from './src/concepts/06-async-await';
+import { asyncAwait2Component } from './src/concepts/07-async-await';
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -32,4 +34,6 @@ const idElementCard = document.querySelector('.card');
 // callbacksComponent(idElementCard);
 // promisesComponent(idElementCard);
 // promesaRaceComponent(idElementCard);
-asyncComponent(idElementCard);
+// asyncComponent(idElementCard);
+// asyncAwaitComponent(idElementCard);
+asyncAwait2Component(idElementCard);
