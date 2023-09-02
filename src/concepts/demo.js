@@ -4,5 +4,6 @@
  * @param {HTMLdivElement} idElementCard
  */
 export const demoComponent = (idElementCard) => {
-  console.log('Demo Componetnt');
+  console.log('Demo Component');
+  return; // detiene la ejecución de la función y regresa undefined
 };

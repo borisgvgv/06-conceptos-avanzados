@@ -3,6 +3,9 @@ import javascriptLogo from './javascript.svg';
 import viteLogo from '/vite.svg';
 import { environmentsComponents } from './src/concepts/01-environments';
 import { callbacksComponent } from './src/concepts/demo-copy-02-callbacks';
+import { promisesComponent } from './src/concepts/promesas';
+import { promesaRaceComponent } from './src/concepts/promesa-race';
+import { asyncComponent } from './src/concepts/async';
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -26,4 +29,7 @@ const idElementCard = document.querySelector('.card');
 
 // Llamadas
 // environmentsComponents(idElementCard);
-callbacksComponent(idElementCard);
+// callbacksComponent(idElementCard);
+// promisesComponent(idElementCard);
+// promesaRaceComponent(idElementCard);
+asyncComponent(idElementCard);
