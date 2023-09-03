@@ -8,7 +8,8 @@ import { promesaRaceComponent } from './src/concepts/04-promesa-race';
 import { asyncComponent } from './src/concepts/05-async';
 import { asyncAwaitComponent } from './src/concepts/06-async-await';
 import { asyncAwait2Component } from './src/concepts/07-async-await2';
-import { forAwaitComponent } from './src/concepts/08-forawait';
+import { forAwaitComponent } from './src/concepts/08-for-await';
+import { generatorFunctionsComponent } from './src/concepts/generators';
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -38,4 +39,5 @@ const idElementCard = document.querySelector('.card');
 // asyncComponent(idElementCard);
 // asyncAwaitComponent(idElementCard);
 // asyncAwait2Component(idElementCard);
-forAwaitComponent(idElementCard);
+// forAwaitComponent(idElementCard);
+generatorFunctionsComponent(idElementCard);
